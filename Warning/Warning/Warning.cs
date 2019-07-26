@@ -22,7 +22,7 @@ namespace RunOutWarning
             if(player == null)
                 return false;
 
-            if(!chat.Equals("/warning"))
+            if(!"/warning".Equals(chat.Trim().ToLower()))
                 return false;
 
             //Sends the UI to the player
@@ -41,7 +41,7 @@ namespace RunOutWarning
             if(player == null)
                 return false;
 
-            if(!chat.Equals("/seewarnings"))
+            if(!"/seewarnings".Equals(chat.Trim().ToLower()))
                 return false;
 
             //Sends the UI to the player
